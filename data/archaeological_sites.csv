@@ -1,0 +1,104 @@
+
+site_id,site_name,latitude,longitude,period,site_type,country,source
+1,Dholavira,23.887,70.214,Harappan,Urban settlement,India,UNESCO World Heritage Centre
+2,Lothal,22.524,72.250,Harappan,Port settlement,India,Archaeological Survey of India
+3,Rakhigarhi,29.286,76.111,Harappan,Urban settlement,India,Archaeological research references
+4,Kalibangan,29.417,74.083,Harappan,Urban settlement,India,Archaeological research references
+5,Sanchi,23.479,77.739,Ancient India,Religious monument,India,UNESCO World Heritage Centre
+6,Ajanta Caves,20.551,75.703,Ancient India,Cave complex,India,UNESCO World Heritage Centre
+7,Ellora Caves,20.026,75.179,Ancient India,Cave complex,India,UNESCO World Heritage Centre
+8,Hampi,15.335,76.460,Medieval India,Urban ruins,India,UNESCO World Heritage Centre
+9,Nalanda,25.136,85.444,Ancient India,Monastic university,India,UNESCO World Heritage Centre
+10,Konark Sun Temple,19.887,86.094,Medieval India,Temple,India,UNESCO World Heritage Centre
+11,Bhimbetka,22.938,77.613,Prehistoric,Rock shelters,India,UNESCO World Heritage Centre
+12,Mahabalipuram,12.620,80.193,Ancient India,Temple complex,India,UNESCO World Heritage Centre
+13,Fatehpur Sikri,27.094,77.667,Medieval India,Historic city,India,UNESCO World Heritage Centre
+14,Sarnath,25.381,83.022,Ancient India,Religious complex,India,Archaeological Survey of India
+15,Pattadakal,15.948,75.816,Ancient India,Temple complex,India,UNESCO World Heritage Centre
+16,Mohenjo-daro,27.329,68.138,Harappan,Urban settlement,Pakistan,UNESCO World Heritage Centre
+17,Harappa,30.633,72.867,Harappan,Urban settlement,Pakistan,Archaeological research references
+18,Taxila,33.746,72.839,Ancient South Asia,Historic city,Pakistan,UNESCO World Heritage Centre
+19,Giza Pyramid Complex,29.979,31.134,Ancient Egypt,Pyramid complex,Egypt,UNESCO World Heritage Centre
+20,Karnak Temple,25.718,32.657,Ancient Egypt,Temple complex,Egypt,UNESCO World Heritage Centre
+21,Abu Simbel,22.337,31.626,Ancient Egypt,Rock-cut temples,Egypt,UNESCO World Heritage Centre
+22,Valley of the Kings,25.741,32.601,Ancient Egypt,Royal necropolis,Egypt,UNESCO World Heritage Centre
+23,Saqqara,29.871,31.216,Ancient Egypt,Necropolis,Egypt,UNESCO World Heritage Centre
+24,Acropolis of Athens,37.972,23.726,Ancient Greece,Temple complex,Greece,UNESCO World Heritage Centre
+25,Delphi,38.483,22.498,Ancient Greece,Sanctuary,Greece,UNESCO World Heritage Centre
+26,Olympia,37.638,21.630,Ancient Greece,Sanctuary,Greece,UNESCO World Heritage Centre
+27,Knossos,35.298,25.163,Minoan,Palatial settlement,Greece,Archaeological research references
+28,Ephesus,37.940,27.341,Classical Antiquity,Ancient city,Turkey,UNESCO World Heritage Centre
+29,Troy,39.957,26.239,Bronze Age,Ancient city,Turkey,UNESCO World Heritage Centre
+30,Gobekli Tepe,37.223,38.922,Prehistoric,Archaeological mound,Turkey,UNESCO World Heritage Centre
+31,Catalhoyuk,37.668,32.828,Neolithic,Settlement,Turkey,UNESCO World Heritage Centre
+32,Pompeii,40.750,14.486,Roman,Urban ruins,Italy,UNESCO World Heritage Centre
+33,Colosseum,41.890,12.492,Roman,Amphitheatre,Italy,UNESCO World Heritage Centre
+34,Herculaneum,40.806,14.348,Roman,Urban ruins,Italy,UNESCO World Heritage Centre
+35,Paestum,40.420,15.005,Ancient Greece and Rome,Temple complex,Italy,UNESCO World Heritage Centre
+36,Machu Picchu,-13.163,-72.545,Inca,Mountain settlement,Peru,UNESCO World Heritage Centre
+37,Nazca Lines,-14.739,-75.130,Pre-Columbian,Geoglyphs,Peru,UNESCO World Heritage Centre
+38,Caral,-10.892,-77.520,Ancient Americas,Urban settlement,Peru,UNESCO World Heritage Centre
+39,Chichen Itza,20.684,-88.568,Maya,Urban and ceremonial centre,Mexico,UNESCO World Heritage Centre
+40,Teotihuacan,19.692,-98.843,Ancient Mesoamerica,Urban settlement,Mexico,UNESCO World Heritage Centre
+41,Palenque,17.484,-92.046,Maya,Urban and ceremonial centre,Mexico,UNESCO World Heritage Centre
+42,Terracotta Army,34.385,109.278,Ancient China,Burial complex,China,UNESCO World Heritage Centre
+43,Liangzhu City,30.390,120.000,Neolithic,Urban settlement,China,UNESCO World Heritage Centre
+44,Great Wall at Badaling,40.356,116.015,Imperial China,Fortification,China,UNESCO World Heritage Centre
+45,Angkor Wat,13.412,103.867,Khmer Empire,Temple complex,Cambodia,UNESCO World Heritage Centre
+46,Borobudur, -7.608,110.204,Medieval Southeast Asia,Buddhist monument,Indonesia,UNESCO World Heritage Centre
+47,Petra,30.328,35.444,Nabataean,Rock-cut city,Jordan,UNESCO World Heritage Centre
+48,Stonehenge,51.179,-1.826,Prehistoric,Stone monument,United Kingdom,UNESCO World Heritage Centre
+49,Babylon,32.542,44.421,Ancient Mesopotamia,Ancient city,Iraq,UNESCO World Heritage Centre
+50,Persepolis,29.935,52.891,Achaemenid Persian,Palatial complex,Iran,UNESCO World Heritage Centre
+
+51,Chittorgarh Fort,24.888,74.646,Medieval India,Fort,India,UNESCO World Heritage Centre
+52,Champaner-Pavagadh,22.488,73.533,Medieval India,Historic city,India,UNESCO World Heritage Centre
+53,Rani ki Vav,23.858,72.102,Medieval India,Stepwell,India,UNESCO World Heritage Centre
+54,Elephanta Caves,18.963,72.931,Ancient India,Cave temple,India,UNESCO World Heritage Centre
+55,Chola Temples Thanjavur,10.783,79.132,Medieval India,Temple complex,India,UNESCO World Heritage Centre
+56,Red Fort Delhi,28.656,77.241,Medieval India,Fort,India,UNESCO World Heritage Centre
+57,Agra Fort,27.179,78.021,Medieval India,Fort,India,UNESCO World Heritage Centre
+58,Humayuns Tomb,28.593,77.250,Medieval India,Tomb complex,India,UNESCO World Heritage Centre
+59,Qutub Minar,28.524,77.185,Medieval India,Monument complex,India,UNESCO World Heritage Centre
+60,Bodh Gaya,24.696,84.991,Ancient India,Buddhist pilgrimage site,India,UNESCO World Heritage Centre
+61,Jericho Tell es-Sultan,31.871,35.444,Neolithic,Ancient settlement,Palestine,UNESCO World Heritage Centre
+62,Masada,31.315,35.353,Ancient Near East,Fortress,Israel,UNESCO World Heritage Centre
+63,Jerusalem Old City,31.776,35.234,Multiple historical periods,Historic city,Jerusalem,UNESCO World Heritage Centre
+64,Baalbek,34.006,36.204,Roman,Temple complex,Lebanon,UNESCO World Heritage Centre
+65,Byblos,34.120,35.649,Bronze Age and later,Ancient port city,Lebanon,UNESCO World Heritage Centre
+66,Palmyra,34.552,38.267,Classical Antiquity,Ancient city,Syria,UNESCO World Heritage Centre
+67,Ur,30.963,46.103,Ancient Mesopotamia,Ancient city,Iraq,Archaeological research references
+68,Dur Sharrukin,36.514,43.226,Neo-Assyrian,Ancient city,Iraq,Archaeological research references
+69,Pasargadae,30.202,53.180,Achaemenid Persian,Palatial complex,Iran,UNESCO World Heritage Centre
+70,Shahr-i Sokhta,30.593,61.330,Bronze Age,Urban settlement,Iran,UNESCO World Heritage Centre
+71,Samarkand,39.654,66.975,Medieval Central Asia,Historic city,Uzbekistan,UNESCO World Heritage Centre
+72,Bukhara,39.774,64.428,Medieval Central Asia,Historic city,Uzbekistan,UNESCO World Heritage Centre
+73,Merv,37.662,62.187,Ancient and medieval Central Asia,Historic city,Turkmenistan,UNESCO World Heritage Centre
+74,Petra Siq,30.327,35.451,Nabataean,Rock-cut architecture,Jordan,UNESCO World Heritage Centre
+75,Knossos Palace,35.298,25.163,Minoan,Palace,Greece,Archaeological research references
+76,Mycenae,37.730,22.756,Mycenaean,Fortified settlement,Greece,UNESCO World Heritage Centre
+77,Epidaurus,37.596,23.074,Ancient Greece,Sanctuary,Greece,UNESCO World Heritage Centre
+78,Delos,37.400,25.267,Ancient Greece,Religious settlement,Greece,UNESCO World Heritage Centre
+79,Hadrians Wall,55.000,-2.300,Roman,Frontier fortification,United Kingdom,UNESCO World Heritage Centre
+80,Skara Brae,59.048,-3.343,Neolithic,Settlement,United Kingdom,UNESCO World Heritage Centre
+81,Newgrange,53.694,-6.475,Neolithic,Passage tomb,Ireland,UNESCO World Heritage Centre
+82,Atapuerca,42.350,-3.517,Prehistoric,Archaeological sites,Spain,UNESCO World Heritage Centre
+83,Altamira Cave,43.377,-4.122,Prehistoric,Cave art,Spain,UNESCO World Heritage Centre
+84,Stonehenge Avenue,51.178,-1.820,Prehistoric,Ceremonial landscape,United Kingdom,UNESCO World Heritage Centre
+85,Leptis Magna,32.639,14.292,Roman,Ancient city,Libya,UNESCO World Heritage Centre
+86,Carthage,36.853,10.323,Punic and Roman,Ancient city,Tunisia,UNESCO World Heritage Centre
+87,Djemila,36.321,5.736,Roman,Ancient city,Algeria,UNESCO World Heritage Centre
+88,Lalibela,12.031,39.047,Medieval Africa,Rock-hewn churches,Ethiopia,UNESCO World Heritage Centre
+89,Great Zimbabwe,-20.267,30.933,Medieval Africa,Stone city,Zimbabwe,UNESCO World Heritage Centre
+90,Meroe Pyramids,16.938,33.749,Kingdom of Kush,Pyramids,Sudan,UNESCO World Heritage Centre
+91,Olduvai Gorge,-2.997,35.353,Prehistoric,Human evolution site,Tanzania,Archaeological research references
+92,Mapungubwe,-22.192,29.236,Medieval Africa,Settlement landscape,South Africa,UNESCO World Heritage Centre
+93,Laetoli,-3.250,35.200,Prehistoric,Hominin footprint site,Tanzania,Archaeological research references
+94,Monte Alban,17.043,-96.767,Zapotec,Ancient city,Mexico,UNESCO World Heritage Centre
+95,El Tajin,20.448,-97.377,Pre-Columbian,Urban and ceremonial centre,Mexico,UNESCO World Heritage Centre
+96,Caracol,16.764,-89.117,Maya,Ancient city,Belize,Archaeological research references
+97,Tikal,17.222,-89.623,Maya,Ancient city,Guatemala,UNESCO World Heritage Centre
+98,Copán,14.837,-89.142,Maya,Ancient city,Honduras,UNESCO World Heritage Centre
+99,Cahokia Mounds,38.660,-90.062,Pre-Columbian,Urban settlement,United States,UNESCO World Heritage Centre
+100,Chaco Culture,36.061,-107.961,Ancestral Puebloan,Ceremonial settlement,United States,UNESCO World Heritage Centre
+
