@@ -678,24 +678,55 @@ if G.number_of_nodes() > 0:
         "is to other reachable sites using network distances."
     )
 
-    chart_df = centrality_df.head(15).sort_values(
-        "Degree Centrality"
+    
+    st.markdown("### Centrality Ranking Chart")
+
+    centrality_metric = st.selectbox(
+        "Rank sites by:",
+        [
+            "Degree Centrality",
+            "Betweenness Centrality",
+            "Closeness Centrality"
+        ]
     )
+
+    top_n = st.slider(
+        "Number of sites to display:",
+        min_value=5,
+        max_value=min(30, len(centrality_df)),
+        value=min(10, len(centrality_df))
+    )
+
+    chart_df = centrality_df.nlargest(
+        top_n, centrality_metric
+    ).sort_values(centrality_metric)
 
     fig_centrality = px.bar(
         chart_df,
-        x="Degree Centrality",
+        x=centrality_metric,
         y="Site",
         color="Country",
         orientation="h",
-        title="Top 15 Sites by Degree Centrality",
-        hover_data=["Connections", "Betweenness Centrality"]
+        title=f"Top {top_n} Sites by {centrality_metric}",
+        hover_data=[
+            "Connections",
+            "Degree Centrality",
+            "Betweenness Centrality",
+            "Closeness Centrality"
+        ]
+    )
+
+    fig_centrality.update_layout(
+        xaxis_title=centrality_metric,
+        yaxis_title="Archaeological Site",
+        yaxis={"categoryorder": "total ascending"}
     )
 
     st.plotly_chart(
         fig_centrality,
         use_container_width=True
     )
+
 
 
 # =========================================================
