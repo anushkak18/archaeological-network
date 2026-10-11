@@ -783,97 +783,134 @@ else:
 # 12. ANALYTICAL CHARTS
 # =========================================================
 
-st.subheader("Archaeological Data Insights")
 
-if not filtered_df.empty:
+# ==========================================
+# ARCHAEOLOGICAL DATA INSIGHTS
+# ==========================================
 
-    chart_tab1, chart_tab2, chart_tab3 = st.tabs([
-        "Sites by Country",
-        "Sites by Period",
-        "Sites by Type"
-    ])
+st.header("Archaeological Data Insights")
 
-    # ---------------- Country chart ----------------
+# ------------------------------------------
+# 1. Archaeological Sites by Country
+# Keep the existing country chart as a bar chart
+# ------------------------------------------
 
-    with chart_tab1:
+st.subheader("Archaeological Sites by Country")
 
-        country_counts = (
-            filtered_df["country"]
-            .value_counts()
-            .rename_axis("Country")
-            .reset_index(name="Number of Sites")
-        )
+country_counts = (
+    filtered_df["country"]
+    .fillna("Unknown")
+    .value_counts()
+    .reset_index()
+)
 
-        country_counts = country_counts.sort_values(
-            "Number of Sites",
-            ascending=True
-        )
+country_counts.columns = ["Country", "Number of Sites"]
 
-        fig_country = px.bar(
-            country_counts,
-            x="Number of Sites",
-            y="Country",
-            orientation="h",
-            title="Number of Archaeological Sites by Country",
-            text="Number of Sites"
-        )
+fig_country = px.bar(
+    country_counts,
+    x="Country",
+    y="Number of Sites",
+    color="Country",
+    title="Number of Archaeological Sites by Country",
+    hover_data=["Number of Sites"]
+)
 
-        st.plotly_chart(
-            fig_country,
-            use_container_width=True
-        )
+fig_country.update_layout(
+    xaxis_title="Country",
+    yaxis_title="Number of Sites",
+    showlegend=False,
+    xaxis_tickangle=-45
+)
 
-    # ---------------- Period chart ----------------
+st.plotly_chart(fig_country, use_container_width=True)
 
-    with chart_tab2:
 
-        period_counts = (
-            filtered_df["period"]
-            .value_counts()
-            .rename_axis("Historical Period")
-            .reset_index(name="Number of Sites")
-        )
+# ------------------------------------------
+# 2. Archaeological Sites by Historical Period
+# Donut Chart
+# ------------------------------------------
 
-        fig_period = px.bar(
-            period_counts,
-            x="Historical Period",
-            y="Number of Sites",
-            title="Sites by Historical Period",
-            text="Number of Sites"
-        )
+st.subheader("Archaeological Sites by Historical Period")
 
-        fig_period.update_layout(
-            xaxis_tickangle=-35
-        )
+period_counts = (
+    filtered_df["period"]
+    .fillna("Unknown")
+    .value_counts()
+    .reset_index()
+)
 
-        st.plotly_chart(
-            fig_period,
-            use_container_width=True
-        )
+period_counts.columns = ["Historical Period", "Number of Sites"]
 
-    # ---------------- Site type chart ----------------
+fig_period = px.pie(
+    period_counts,
+    names="Historical Period",
+    values="Number of Sites",
+    hole=0.5,
+    title="Distribution of Sites by Historical Period"
+)
 
-    with chart_tab3:
+fig_period.update_traces(
+    textposition="inside",
+    textinfo="percent+label",
+    hovertemplate=(
+        "<b>%{label}</b><br>"
+        "Sites: %{value}<br>"
+        "Share: %{percent}"
+        "<extra></extra>"
+    )
+)
 
-        type_counts = (
-            filtered_df["site_type"]
-            .value_counts()
-            .rename_axis("Site Type")
-            .reset_index(name="Number of Sites")
-        )
+fig_period.update_layout(
+    legend_title_text="Historical Period"
+)
 
-        fig_type = px.pie(
-            type_counts,
-            names="Site Type",
-            values="Number of Sites",
-            title="Distribution of Archaeological Site Types",
-            hole=0.35
-        )
+st.plotly_chart(fig_period, use_container_width=True)
 
-        st.plotly_chart(
-            fig_type,
-            use_container_width=True
-        )
+
+# ------------------------------------------
+# 3. Archaeological Sites by Site Type
+# Scatter Plot
+# ------------------------------------------
+
+st.subheader("Archaeological Sites by Site Type")
+
+site_type_counts = (
+    filtered_df["site_type"]
+    .fillna("Unknown")
+    .value_counts()
+    .reset_index()
+)
+
+site_type_counts.columns = ["Site Type", "Number of Sites"]
+
+fig_site_type = px.scatter(
+    site_type_counts,
+    x="Site Type",
+    y="Number of Sites",
+    color="Site Type",
+    size="Number of Sites",
+    hover_name="Site Type",
+    hover_data={"Number of Sites": True},
+    title="Number of Sites Across Different Site Types",
+    size_max=35
+)
+
+fig_site_type.update_traces(
+    marker=dict(
+        opacity=0.8,
+        line=dict(width=1)
+    )
+)
+
+fig_site_type.update_layout(
+    xaxis_title="Archaeological Site Type",
+    yaxis_title="Number of Sites",
+    showlegend=False
+)
+
+fig_site_type.update_xaxes(tickangle=-30)
+
+st.plotly_chart(fig_site_type, use_container_width=True)
 
 
 # =========================================================
